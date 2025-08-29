@@ -5,7 +5,7 @@ import bcrypt from 'bcryptjs';
 import { AuthError } from 'next-auth';
 
 import { db } from '@/lib/prisma';
-import { signIn } from '@/auth';
+import { signIn, signOut } from '@/auth';
 import { LoginSchema, RegisterSchema } from '@/schemas';
 
 export const login = async (values: z.infer<typeof LoginSchema>) => {
