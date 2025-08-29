@@ -1,5 +1,5 @@
 import NextAuth from 'next-auth';
-import { auth } from '@/auth';
+import { auth } from './auth';
 import { NextResponse } from 'next/server';
 
 const publicRoutes = ['/', '/login', '/register'];
